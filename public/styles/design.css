@@ -1,0 +1,237 @@
+body{
+    background-color: #EEF5FF;
+}
+
+.navbar {
+    position: fixed; /* Le navbar est positionné de façon fixe */
+    top: 0;
+    left: 0;
+    bottom: 0; /* Couvre toute la hauteur de la fenêtre */
+    width: 100px; /* Largeur du navbar */
+    z-index: 1000;
+    
+}
+.my-custom-element {
+    background-color: #070F2B; 
+    color: #ffffff; 
+    padding: 10px; 
+    /*margin: 50px; */
+    border: 2px solid #000000; 
+    text-align: center; 
+    border-radius: 5px;
+    margin-left: -90px;
+    margin-top: -190px;
+    margin-right:-180px;
+    position: fixed;
+    width: 1405px;
+    height: 80px;
+    z-index: 2;
+    
+}
+.content{
+    margin-top: 160px;
+}
+div.container-lg {
+    float: left;
+    /*margin-left: -120px;*/
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    
+    
+}
+div.equipement{
+    float: right;
+    /*margin-right: -120px;*/
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+.table-wrapper {
+    width: 1000px;
+    margin-left: 80px;
+    margin-top: -20px;
+    background-color: #EEF5FF;
+
+    padding: 20px;	
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    border: 0px separate rgb(85, 76, 76); /* Définit une bordure solide de 2 pixels pour le tableau, les en-têtes de colonnes et les cellules */
+    border-spacing: 50px; /* Espacement entre les cellules */
+    /*border-radius: 20px;*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre de départ */
+    animation: shadowAnimation 2s ease infinite; /* Applique l'animation à la div */
+
+
+}
+.table.contenu{
+    border-radius: 0px;
+
+}
+.table-title {
+    padding-bottom: 10px;
+    margin: 0 0 10px;
+    color:#070F2B;
+
+}
+.table-title h2 {
+    margin: 6px 0 0;
+    font-size: 22px;
+}
+.table-title .add-new {
+    float: right;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: none;
+    min-width: 200px;
+    border-radius: 50px;
+    line-height: 25px;
+    background-color:#1B1A55;
+}
+.table-title .add-new i {
+    margin-right: 4px;
+}
+table.table {
+    table-layout: auto ;
+}
+/*a reverifier*/
+table.table tr th, table.table tr td {
+   /* border-color: #e9e9e9;*/
+   border: none;
+}
+table.table th i {
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+table.table th:last-child {
+    width: 100px;
+}
+table.table td a {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+    min-width: 24px;
+} 
+table.table td a.edit {
+    color: #1B1A55;
+}
+table.table td a.print {
+    color: #1B1A55;
+}
+table.table td button.delete {
+    color: #E34724;
+    border: none;
+    background-color: #ffffff;
+}
+table.table td i {
+    font-size: 25px;
+    text-align: center;
+}
+table.table td a.add i {
+    font-size: 24px;
+    margin-right: -1px;
+    position: relative;
+    top: 30px;
+}
+.white-text .nav-link {
+    color: #ffffff; 
+}
+.bg-dark-custom {
+    background-color: #070F2B; 
+    color: #070F2B; 
+    border-radius: 0px;
+    z-index: 2;
+    border: none;
+ 
+}
+.btn_rechercher{
+    background-color: #535C91;
+    border-radius: 8px;
+}
+.btn-custom{
+    border-radius: 8px;
+    padding: 50%;
+}
+
+.equipement.barre_recherche{
+    border-radius: 15px;
+}
+/* CSS pour espacer davantage les éléments div */
+.nav-item {
+    margin-right: 50px; /* Ajoute un espacement de 15 pixels à droite de chaque élément div */
+}
+
+/*.container.contenu{
+
+}*/
+
+
+
+
+
+.navbar-nav {
+    margin-left: -20px;
+    width: 0%; /* Largeur de la liste */
+}
+
+.nav-item {
+    margin-bottom: 40px; /* Espacement entre chaque élément de navigation */
+}
+
+.fixed-left {
+    flex-direction: column; /* La direction des éléments est verticale */
+    align-items: flex-start; /* Alignement des éléments à gauche */
+}
+
+div.icon-container{
+    background-color: #EEF5FF;
+}
+.modification {
+    margin: 80px;
+    width: 500px;
+    margin-left: 0px;
+    border: 2px solid #070F2B;
+    border-radius: 10px;
+    padding: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre de départ */
+    animation: shadowAnimation 2s ease infinite; /* Applique l'animation à la div */
+}
+
+@keyframes shadowAnimation {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre de départ */
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Ombre agrandie à mi-chemin */
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Retour à l'ombre de départ */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        width: auto; /* Ajuster la largeur automatiquement sur les petits écrans */
+    }
+}
+
+
+
+/* Centrer les éléments */
+.special {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuster la hauteur selon vos besoins */
+}
+
+/* Styles spéciaux pour la balise h8 avec classe "accueil" */
+.accueil {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1B1A55;
+    animation: specialAnimation 2s ease infinite; /* Ajouter une animation spéciale */
+}
